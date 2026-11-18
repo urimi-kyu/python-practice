@@ -32,7 +32,7 @@ def sum_to_n(n):
         return 0
     else:
         for i in range(n + 1):
-            sum_init += n
+            sum_init += i
     return sum_init
 
 
@@ -82,7 +82,10 @@ def fizzbuzz(n):
     new_list8 = []
     for i in range(1, n + 1, 1):
         if i % 3 == 0:
-            new_list8.append("Fizz")
+            if i % 5 == 0:
+                new_list8.append("FizzBuzz")
+            else:
+                new_list8.append("Fizz")
         elif i % 5 == 0:
             new_list8.append(("Buzz"))
         else:
@@ -92,10 +95,9 @@ def fizzbuzz(n):
 
 def second_largest(nums):
     """9. 두 번째로 큰 값 (중복은 한 번만 셈)"""
-    s_nums = nums.sort()
-    A = set(s_nums)
-    s_nums = list(A)
-    return s_nums[-2]
+    A = nums.sort()
+    B = set(A)
+    return list(B)[-2]
 
 
 def is_palindrome(s):
