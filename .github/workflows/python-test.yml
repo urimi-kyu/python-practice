@@ -1,0 +1,25 @@
+# push할 때마다 GitHub가 자동으로 채점합니다.
+name: 파이썬 채점
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 코드 가져오기
+        uses: actions/checkout@v4
+
+      - name: 파이썬 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: pytest 설치
+        run: pip install pytest
+
+      - name: 채점 실행
+        run: pytest -v
