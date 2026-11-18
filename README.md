@@ -8,6 +8,10 @@ set01/
   problems.md     ← 문제 설명
   solution01.py   ← 여기에 코드를 작성
   test_set01.py   ← 채점 파일 (고치지 마세요)
+set02/            ← 2세트 (20문제) — 파일 구성은 1세트와 같아요
+  problems.md
+  solution02.py
+  test_set02.py
 .github/workflows/python-test.yml  ← 자동 채점 설정
 .gitignore        ← 올리지 않을 파일 목록
 ```
@@ -69,6 +73,9 @@ GitHub Desktop 메뉴 **Repository → View on GitHub**를 누르면 저장소 �
 
 > **Commit**은 "내 PC에 저장 기록 남기기", **Push**는 "그 기록을 GitHub로 보내기"예요.
 > Commit만 하고 Push를 안 하면 GitHub에는 안 올라가요.
+
+> 채점은 모든 세트를 한꺼번에 해요. 그래서 1세트를 다 맞혀도 2세트에 안 푼 문제가 있으면 전체 결과는 ❌로 떠요.
+> 로그에서 `set01/...`은 모두 PASSED, `set02/...`는 일부 FAILED처럼 세트별로 확인하세요.
 
 ### 채점 결과 읽는 법
 ```
