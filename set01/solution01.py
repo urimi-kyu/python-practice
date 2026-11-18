@@ -89,14 +89,14 @@ def fizzbuzz(n):
         elif i % 5 == 0:
             new_list8.append(("Buzz"))
         else:
-            new_list8.append(i)
+            new_list8.append(str(i))
     return new_list8
 
 
 def second_largest(nums):
     """9. 두 번째로 큰 값 (중복은 한 번만 셈)"""
-    A = nums.sort()
-    B = set(A)
+    nums.sort()
+    B = set(nums)
     return list(B)[-2]
 
 
