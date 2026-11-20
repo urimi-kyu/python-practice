@@ -160,19 +160,42 @@ def capitalize_words(s):
 
 def caesar_cipher(s, shift):
     """16. 알파벳을 shift칸 밀기 (대소문자 유지, 나머지 글자는 그대로)"""
-    pass
-
+    ans = ""
+    for ch in s:
+        P = ord(ch)
+        if 65 <= P <= 90:
+            U = (P - ord("A") + shift) % 26
+            ans +=chr(U + ord("A"))
+        elif 97 <= P <= 122:
+            U = (P - ord("a") + shift) % 26
+            ans +=chr(U + ord("a"))
+        else:
+           ans += ch
+    return ans
 
 # ---------- D. 딕셔너리 ----------
 
 def count_words(s):
     """17. 단어별 개수 딕셔너리 (소문자로)"""
-    pass
-
+    ans = {}
+    L = s.lower()
+    L = L.split()
+    for word in L:
+        if word in ans:
+            ans[word] += 1
+        else:
+            ans[word] = 1
+    return ans
 
 def most_common_char(s):
     """18. 가장 많이 나온 글자 (공백 제외, 같으면 먼저 나온 글자)"""
-    pass
+    A = {}
+    for ch in s.replace(" ",""):
+        if ch in A:
+            A[ch] += 1
+        else:
+            A[ch] = 1
+    return max(A,key = A.get)
 
 
 # ---------- E. 2차원 리스트 ----------
@@ -206,4 +229,4 @@ def transpose(matrix):
 
 # 직접 실행해 보고 싶으면 아래에 print를 써서 확인해 보세요.
 if __name__ == "__main__":
-    print(primes_up_to(10))
+    print(print(caesar_cipher("abc", -1)))              # zab)
