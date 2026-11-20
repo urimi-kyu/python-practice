@@ -85,7 +85,15 @@ def primes_up_to(n):
 
 def fibonacci(n):
     """8. 피보나치 수열 처음 n개"""
-
+    ans=[0,1]
+    if n == 0:
+        return []
+    elif n == 1:
+        return [0]
+    else:
+        for i in range(n-2):
+            ans.append(ans[i] + ans[i+1])
+        return ans
 
 # ---------- B. 리스트 다루기 ----------
 

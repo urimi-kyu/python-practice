@@ -12,6 +12,10 @@ set02/            ← 2세트 (20문제) — 파일 구성은 1세트와 같아�
   problems.md
   solution02.py
   test_set02.py
+set03/            ← 3세트 (20문제) — 알고리즘, 튜플, 딕셔너리 리스트
+  problems.md
+  solution03.py
+  test_set03.py
 .github/workflows/python-test.yml  ← 자동 채점 설정
 .gitignore        ← 올리지 않을 파일 목록
 ```
