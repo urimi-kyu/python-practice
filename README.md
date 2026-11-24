@@ -16,6 +16,12 @@ set03/            ← 3세트 (20문제) — 알고리즘, 튜플, 딕셔너리 
   problems.md
   solution03.py
   test_set03.py
+set04/            ← 4세트 (5문제, 하루치) — Counter, 딕셔너리, 에라토스테네스의 체
+  problems.md
+  solution04.py
+  test_set04.py
+answers/          ← 모범 답안 (다 풀고 나서 확인하세요)
+  answer04.py
 .github/workflows/python-test.yml  ← 자동 채점 설정
 .gitignore        ← 올리지 않을 파일 목록
 ```
