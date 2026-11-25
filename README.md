@@ -24,9 +24,14 @@ set05/            ← 5세트 (5문제, 하루치) — 스택, 큐, deque
   problems.md
   solution05.py
   test_set05.py
+set06/            ← 6세트 (5문제, 하루치) — 정렬과 key, 이진 탐색
+  problems.md
+  solution06.py
+  test_set06.py
 answers/          ← 모범 답안 (다 풀고 나서 확인하세요)
   answer04.py
   answer05.py
+  answer06.py
 .github/workflows/python-test.yml  ← 자동 채점 설정
 .gitignore        ← 올리지 않을 파일 목록
 ```
