@@ -28,10 +28,15 @@ set06/            ← 6세트 (5문제, 하루치) — 정렬과 key, 이진 탐
   problems.md
   solution06.py
   test_set06.py
+set07/            ← 7세트 (5문제, 하루치) — 슬라이딩 윈도우, 누적합
+  problems.md
+  solution07.py
+  test_set07.py
 answers/          ← 모범 답안 (다 풀고 나서 확인하세요)
   answer04.py
   answer05.py
   answer06.py
+  answer07.py
 .github/workflows/python-test.yml  ← 자동 채점 설정
 .gitignore        ← 올리지 않을 파일 목록
 ```
