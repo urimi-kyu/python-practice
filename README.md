@@ -32,11 +32,16 @@ set07/            ← 7세트 (5문제, 하루치) — 슬라이딩 윈도우, �
   problems.md
   solution07.py
   test_set07.py
+set08/            ← 8세트 (5문제, 하루치) — 2차원 리스트, BFS/DFS 기초
+  problems.md
+  solution08.py
+  test_set08.py
 answers/          ← 모범 답안 (다 풀고 나서 확인하세요)
   answer04.py
   answer05.py
   answer06.py
   answer07.py
+  answer08.py
 .github/workflows/python-test.yml  ← 자동 채점 설정
 .gitignore        ← 올리지 않을 파일 목록
 ```
